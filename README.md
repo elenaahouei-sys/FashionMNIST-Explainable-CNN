@@ -1,45 +1,38 @@
 # FashionMNIST-Explainable-CNN
-This project implements a high-performance Convolutional Neural Network (CNN) for classifying images from the FashionMNIST dataset using PyTorch.
-Beyond standard training, this repository includes advanced deep learning engineering practices such as:
+This project implements a high-performance Convolutional Neural Network (CNN) for classifying images from the FashionMNIST dataset using PyTorch. Beyond standard training, it incorporates advanced deep learning engineering practices for accuracy, interpretability, and professional project structure.
 
-Early Stopping
+⚡ Features
 
-Model Checkpointing
+Early Stopping – Stops training when validation loss plateaus to prevent overfitting
 
-Mixed Precision Training
+Model Checkpointing – Saves the best-performing model automatically
 
-Confusion Matrix Visualization
+Mixed Precision Training – Accelerates training with reduced memory usage
 
-Grad-CAM Explainability
-
-Training & Validation Curves
-
-The goal is not only high accuracy, but also model interpretability and professional ML project structure.
+Confusion Matrix Visualization – Evaluate model predictions across classes
 
 📊 Dataset
 
-🔥 FashionMNIST
+FashionMNIST
 
 70,000 grayscale images
 
-10 clothing categories
+10 clothing categories (T-shirt, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot)
 
-28x28 resolution
+28×28 resolution
 
-Automatically downloaded via torchvision
+Downloaded automatically via torchvision
 
 🏗 Model Architecture
 
-The model is a custom CNN consisting of:
+The model is a custom CNN designed for both performance and interpretability:
 
-Multiple Convolutional layers
+Multiple Convolutional layers with ReLU activations
 
-Batch Normalization
+Batch Normalization to stabilize learning
 
-ReLU activations
+MaxPooling layers to reduce spatial dimensions
 
-MaxPooling
+Fully Connected (Dense) layers for classification
 
-Fully Connected layers
-
-Dropout regularization
+Dropout for regularization and preventing overfitting
